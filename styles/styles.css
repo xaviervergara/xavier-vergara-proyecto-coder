@@ -16,6 +16,7 @@ body {
 a {
   text-decoration: none;
 }
+
 /* _______________________________________________ */
 
 /* ::::::HEADER:::::: */
@@ -76,9 +77,15 @@ a {
   background-color: rgb(5, 5, 0);
 }
 
+.lista__canvas > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 .link-canvas {
   display: flex;
-  width: 11em;
+  width: 17em;
   text-decoration: none;
   color: rgb(165, 155, 126);
   margin: 1em;
