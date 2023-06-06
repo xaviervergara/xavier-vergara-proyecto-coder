@@ -144,7 +144,7 @@ a {
   border-top: 1px solid white;
 }
 
-ul {
+.lista__footer {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -160,21 +160,17 @@ ul {
   font-family: "Play", sans-serif;
 }
 
-li > p {
-  color: rgb(255, 255, 255);
-  font-size: 0.7em;
-  margin: 0.2em;
-}
-li > h2 {
+.footer__ttl {
   color: rgb(165, 155, 126);
   margin: 0;
   font-size: 1em;
   margin-bottom: 0.7em;
 }
-.link__p > p {
+.link__p {
   color: rgb(255, 255, 255);
   font-size: 0.7em;
-  margin: 0.2em;
+  /* margin: 0.2em; */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer_cuadricula {
