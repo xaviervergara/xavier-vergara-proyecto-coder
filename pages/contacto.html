@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contacto</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- BOOTSRAP ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- GOOGLE-FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <!-- JS  -->
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <div class="container-fluid header__container">
+      <div class="row header__row">
+        <div class="col-6 d-flex justify-content-start header__desktop">
+          <!-- PRIMERA-FILA -->
+
+          <!-- OFF-CANVA -->
+
+          <button
+            class="btn btn-primary boton-personalizado"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                Categorías
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <ul>
+                  <li><a class="link-canvas" href="#">Peliculas</a></li>
+                  <li><a class="link-canvas" href="#">Fotografía</a></li>
+                  <li><a class="link-canvas" href="#">Música</a></li>
+                  <li><a class="link-canvas" href="#">Abstracto</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- _______________________________________________ -->
+          <div class="p-2 header__marca"><a href="../index.html">Marca</a></div>
+        </div>
+
+        <!-- SEGUNDA-FILA -->
+
+        <div class="col-6 d-flex justify-content-end header__desktop-b">
+          <div class="p-2 header__search">
+            <a href="#"><i class="bi bi-search"></i></a>
+          </div>
+          <div class="p-2 header__shop">
+            <a href="#"> <i class="bi bi-bag-fill"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ::::::::::::NAV-BAR:::::::::::: -->
+
+    <nav class="container-fluid barra-navegadora">
+      <div class="row nav__row">
+        <div class="col-3 nav__item"><h3>Peliculas</h3></div>
+        <div class="col-3 nav__item"><h3>Fotografía</h3></div>
+        <div class="col-3 nav__item"><h3>Música</h3></div>
+        <div class="col-3 nav__item"><h3>Abstracto</h3></div>
+      </div>
+    </nav>
+
+    <!-- ::::::::::::::::::FORMULARIO:::::::::::::::::: -->
+    <main>
+      <div class="container-fluid mt-3 contenedor__formulario">
+        <div class="row mb-3 row__form-txt">
+          <div class="col">Contactanos</div>
+        </div>
+        <div class="row row__formulario">
+          <div class="col-10 col-md-8 col-xl-4">
+            <form>
+              <div class="mb-3">
+                <label
+                  for="exampleInputEmail1"
+                  class="form-label titulo__etiqueta"
+                  >E-mail:</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+
+              <!-- ____________________nombre y apellido_____________ -->
+              <div class="mb-3">
+                <label
+                  for="exampleInputText1"
+                  class="form-label titulo__etiqueta"
+                  >Nombre y apellido:</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputText1"
+                  aria-describedby="textHelp"
+                />
+              </div>
+              <!-- _________fin nombre y apellido____________________ -->
+              <div class="mb-3">
+                <label
+                  for="exampleInputPassword1"
+                  class="form-label titulo__etiqueta"
+                  >Password:</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input formulario__checkbox"
+                  id="exampleCheck1"
+                />
+                <label
+                  class="form-check-label titulo__etiqueta"
+                  for="exampleCheck1"
+                  >Quiero suscribirme al NewsLetter!</label
+                >
+              </div>
+              <!-- ________________________TEXTAREA -->
+
+              <button type="submit" class="btn btn-primary boton__formulario">
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- ::::::::::::FOOTER:::::::::::: -->
+
+    <footer class="mt-3">
+      <div class="container-fluid linea-divisora">
+        <!-- MARCA -->
+
+        <div class="row ancho__marca">
+          <div class="col-12 contenedor__marca">
+            <h2 class="footer__marca mt-2">MARCA</h2>
+          </div>
+        </div>
+
+        <!-- PRIMERA FILA -->
+
+        <div class="row ancho__filauno">
+          <!-- NOSOTROS -->
+
+          <div
+            class="col-6 d-flex justify-content-center footer_cuadricula ajuste_1"
+          >
+            <ul>
+              <li>
+                <h2>Nosotros</h2>
+              </li>
+              <li>
+                <p>Terminos y condiciones</p>
+              </li>
+              <li>
+                <p>Politicas de privacidad</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- AYUDA -->
+          <div class="col-6 d-flex footer_cuadricula ajuste_2">
+            <ul>
+              <li>
+                <h2>Ayuda</h2>
+              </li>
+              <li>
+                <p>Preguntas frecuentes</p>
+              </li>
+              <li>
+                <p>Envio y seguimiento</p>
+              </li>
+              <li>
+                <p>Boton de arrepentimiento</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- SEGUNDA FILA -->
+
+        <div class="row ancho__filados">
+          <!-- SEGUINOS -->
+
+          <div
+            class="col-6 d-flex justify-content-center footer_cuadricula ajuste_3"
+          >
+            <ul>
+              <li>
+                <h2>Seguinos</h2>
+              </li>
+              <li>
+                <p>Instagram</p>
+              </li>
+              <li>
+                <p>Facebook</p>
+              </li>
+            </ul>
+          </div>
+          <!-- CONTACTANOS -->
+          <div class="col-6 d-flex footer_cuadricula ajuste_4">
+            <ul>
+              <li>
+                <h2>Contactanos</h2>
+              </li>
+              <li>
+                <a href="contacto.html" class="link__p"> <p>Contacto</p></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- BOOSTRAP JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
