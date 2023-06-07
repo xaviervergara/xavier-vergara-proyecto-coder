@@ -1,0 +1,19 @@
+{
+  "name": "proyecto-coderhouse",
+  "version": "1.0.0",
+  "description": "incorporando sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xaviervergara/xavier-vergara-proyecto-coder.git"
+  },
+  "author": "xavier vergara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xaviervergara/xavier-vergara-proyecto-coder/issues"
+  },
+  "homepage": "https://github.com/xaviervergara/xavier-vergara-proyecto-coder#readme"
+}
