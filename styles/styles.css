@@ -13,6 +13,7 @@
 body {
   background-color: rgb(5, 5, 0);
 }
+
 a {
   text-decoration: none;
 }
@@ -34,7 +35,7 @@ a {
 .boton-personalizado {
   --bs-btn-hover-bg: transparent;
   --bs-btn-hover-border-color: transparent;
-  --bs-btn-active-bg: hsl(60, 100%, 1%);
+  --bs-btn-active-bg: rgb(5, 5, 0);
   --bs-btn-active-border-color: transparent;
   background-color: transparent;
   padding: 0;
@@ -42,7 +43,7 @@ a {
   border-color: transparent;
 }
 
-.btn > i {
+.boton-personalizado > i {
   color: hsl(60, 100%, 1%);
   font-size: 1.5em;
   font-weight: bold;
