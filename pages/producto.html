@@ -26,76 +26,79 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/styles.css" />
-    <!-- JS  -->
-    <script type="module" src="script.js"></script>
   </head>
   <body>
     <!-- HEADER -->
+    <header>
+      <div class="container-fluid header__container">
+        <div class="row header__row">
+          <div class="col-6 d-flex justify-content-start header__desktop">
+            <!-- PRIMERA-FILA -->
 
-    <div class="container-fluid header__container">
-      <div class="row header__row">
-        <div class="col-6 d-flex justify-content-start header__desktop">
-          <!-- PRIMERA-COLUMNA -->
+            <!-- OFF-CANVA -->
 
-          <!-- OFF-CANVA -->
+            <button
+              class="btn btn-primary boton-personalizado"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasExample"
+              aria-controls="offcanvasExample"
+            >
+              <i class="bi bi-list"></i>
+            </button>
 
-          <button
-            class="btn btn-primary boton-personalizado"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasExample"
-            aria-controls="offcanvasExample"
-          >
-            <i class="bi bi-list"></i>
-          </button>
-
-          <div
-            class="offcanvas offcanvas-start"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">
-                Categorías
-              </h5>
-              <button
-                type="button"
-                class="btn-close"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="lista__canvas">
-                <ul>
-                  <li><a class="link-canvas" href="#">Peliculas</a></li>
-                  <li><a class="link-canvas" href="#">Fotografía</a></li>
-                  <li><a class="link-canvas" href="#">Música</a></li>
-                  <li><a class="link-canvas" href="#">Abstracto</a></li>
-                </ul>
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="offcanvasExample"
+              aria-labelledby="offcanvasExampleLabel"
+            >
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                  Categorías
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <div class="lista__canvas">
+                  <ul>
+                    <li>
+                      <a class="link-canvas" href="./peliculas.html"
+                        >Peliculas</a
+                      >
+                    </li>
+                    <li><a class="link-canvas" href="#">Fotografía</a></li>
+                    <li><a class="link-canvas" href="#">Música</a></li>
+                    <li><a class="link-canvas" href="#">Abstracto</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
+
+            <!-- _______________________________________________ -->
+            <div class="p-2 header__marca">
+              <a href="../index.html">Marca</a>
+            </div>
           </div>
 
-          <!-- _______________________________________________ -->
-          <div class="p-2 header__marca"><a href="../index.html">Marca</a></div>
-        </div>
+          <!-- SEGUNDA-FILA -->
 
-        <!-- SEGUNDA-COLUMNA -->
-
-        <div class="col-6 d-flex justify-content-end header__desktop-b">
-          <div class="p-2 header__search">
-            <a href="#"><i class="bi bi-search"></i></a>
-          </div>
-          <div class="p-2 header__shop">
-            <a href="#"> <i class="bi bi-bag-fill"></i></a>
+          <div class="col-6 d-flex justify-content-end header__desktop-b">
+            <div class="p-2 header__search">
+              <a href="#"><i class="bi bi-search"></i></a>
+            </div>
+            <div class="p-2 header__shop">
+              <a href="#"> <i class="bi bi-bag-fill"></i></a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <!-- ::::::::::::MAIN:::::::::::: -->
+    </header>
 
     <!-- BARRA NAVEGADORA -->
     <nav class="container-fluid barra-navegadora">
@@ -106,7 +109,7 @@
         <div class="col-3 nav__item"><h3>Abstracto</h3></div>
       </div>
     </nav>
-    <!-- CARD -->
+    <!-- ::::::::::::MAIN-card:::::::::::: -->
     <main class="container-fluid main__card">
       <div class="row d-flex justify-content-center card-img__ancho">
         <div class="card m-3 col col-md-8 col-xl-4 card__cuerpo">
