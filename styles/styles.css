@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* _______________________________________________ */
 
 /* ::::::::::::::::::::::::INDEX.HTML:::::::::::::::::::::::: */
@@ -15,7 +16,7 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 /* _______________________________________________ */
@@ -26,6 +27,7 @@ a {
   background-color: rgb(165, 155, 126);
   height: 3em;
 }
+
 /* ______________________________ */
 
 /* OFF-CANVAS */
@@ -59,6 +61,7 @@ a {
   background-color: rgba(5, 5, 0, 0.9);
   border-bottom: 2px solid rgba(165, 155, 126, 0.4);
 }
+
 .offcanvas-header > h5 {
   color: rgb(165, 155, 126);
 }
@@ -98,6 +101,7 @@ a {
   font-size: 0.97em;
   border-color: transparent;
 }
+
 /* _____________________________________________________ */
 
 /*HEADER-MARCA/SEARCH/SHOP*/
@@ -119,6 +123,7 @@ a {
   font-size: 1.2em;
   color: #050500;
 }
+
 /* _________________________________________________________ */
 
 /* ::::::MAIN:::::: */
@@ -148,6 +153,12 @@ a {
 
 /* ::::::FOOTER:::::: */
 
+footer {
+  font-family: "Jost", sans-serif !important;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
 .linea-divisora {
   border-top: 1px solid white;
 }
@@ -173,12 +184,14 @@ a {
   margin: 0;
   font-size: 1em;
   margin-bottom: 0.7em;
+  font-weight: 700;
 }
+
 .link__p {
   color: rgb(255, 255, 255);
   font-size: 0.7em;
   /* margin: 0.2em; */
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 .footer_cuadricula {
@@ -215,13 +228,16 @@ a {
   background-color: #000;
   border: none;
 }
+
 .card__boton > i {
   color: white;
 }
+
 .card__boton > span {
   margin-right: 0.5em;
   font-size: 1.1em;
 }
+
 .card__boton:hover {
   background-color: black;
 }
@@ -229,10 +245,12 @@ a {
 .card__boton:active {
   background-color: black !important;
 }
+
 /* ::::::::::::::::::::::::CONTACTO.HTML:::::::::::::::::::::::: */
 .row__form-txt {
   height: 3em;
 }
+
 .row__form-txt > div {
   font-size: 2em;
   color: rgb(165, 155, 126);
@@ -312,22 +330,25 @@ a {
 
 /* CONTENEDOR CARD PADRE___________________________ */
 .card__cont {
-  height: 350px;
-  width: 190px;
+  height: 350p;
+  width: 190p;
   margin: 0.5em;
   padding: 0.5em;
   border-radius: 10px;
   background-color: #0a0a0a;
 }
+
 /* CONTENEDOR IMAGEN */
 .card__cont__img {
   border-radius: 25px;
   border: 1px solid rgb(165, 155, 126);
 }
+
 /* IMAGEN */
 .card__cont__img > img {
   border-radius: 25px;
 }
+
 /* DESCRIPCION */
 .card__cont__txt > p {
   margin: 0;
@@ -336,7 +357,7 @@ a {
 
 /* BUTTON */
 
-.card__cont__button > button {
+.card__cont__button > a > button {
   --bs-btn-color: rgb(165, 155, 126);
   --bs-btn-bg: rgb(5, 5, 0);
   --bs-btn-border-color: rgb(165, 155, 126);
@@ -354,14 +375,17 @@ a {
   display: flex;
   align-items: center;
 }
-.card__cont__button > button > i {
+
+.card__cont__button > a > button > i {
   font-size: 1em;
   margin-right: 0.2em;
 }
-.card__cont__button > button > p {
+
+.card__cont__button > a > button > p {
   font-size: 1em;
   margin: 0;
 }
+
 /* _____________________________________________________ */
 /* ------------------MEDIA-QUERIES------------------ */
 
@@ -373,12 +397,15 @@ a {
   .carousel-caption > h5 {
     font-size: 1.2em;
   }
+
   .carousel-caption > p {
     font-size: 1em;
   }
+
   .carousel-indicators {
     display: none;
   }
+
   .carousel-caption {
     bottom: -1.7rem;
   }
@@ -393,6 +420,7 @@ a {
     justify-content: space-between;
     height: 10em;
   }
+
   .footer_cuadricula > ul {
     margin: 1em;
     width: 7em;
@@ -402,18 +430,22 @@ a {
     display: flex;
     justify-content: center;
   }
+
   .footer__marca {
     display: flex;
     justify-content: center;
   }
+
   /* ::::::::::::PRODUCTO.HTML:::::::::::: */
   .main__card {
     display: flex;
   }
+
   .card-img__ancho,
   .card-txt__ancho {
     width: 100%;
   }
+
   .card__cuerpo {
     width: 90%;
   }
@@ -441,6 +473,7 @@ a {
     /* border: 1px solid red; */
     height: 10em;
   }
+
   .ancho__marca {
     width: 100%;
     /* border: 1px SOLID WHITE; */
@@ -471,6 +504,7 @@ a {
     display: flex;
     justify-content: center;
   }
+
   /* LA DIMENSION ORIGINAL DE LOS 3 ITEMS DE ABAJO ES:675 X 1200 */
   .main__img {
     height: 600px;
@@ -574,6 +608,7 @@ a {
     position: absolute;
     left: 25%;
   }
+
   .main__title > h1 {
     font-size: 3em;
     width: 50%;
@@ -581,18 +616,27 @@ a {
 }
 
 /*HASTA QUE LA PANTALLA NO MIDA 1200PX NO SE MUESTRA LA GALERIA DE POSTERS RECTANGULARES 
-  NI LA BARRA NAVEGADORA NI LA FILA DE INFO ADICIONAL NI MENU DESPLEGABLE*/
+  NI LA BARRA NAVEGADORA NI LA FILA DE INFO ADICIONAL NI MENU DESPLEGABLE ni el filtro izquierdo y la fila adicional en peliculas.html */
 
 @media screen and (max-width: 1199px) {
   .main__galeria {
     display: none;
   }
+
   .barra-navegadora {
     display: none;
   }
 
   .informacion__adicional {
     display: none;
+  }
+
+  .seccion__filtro {
+    display: none !important;
+  }
+
+  .tarjeta__adicional {
+    display: none !important;
   }
 }
 
@@ -604,6 +648,7 @@ a {
   .boton-personalizado {
     display: none;
   }
+
   .header__container {
     height: 4em;
   }
@@ -612,6 +657,7 @@ a {
   .btn > i {
     font-size: 1.8em;
   }
+
   .header__row {
     display: flex;
     align-items: center;
@@ -621,6 +667,7 @@ a {
     justify-content: flex-end !important;
     width: 53%;
   }
+
   .header__desktop-b {
     width: 47%;
   }
@@ -641,14 +688,16 @@ a {
   .nav__row {
     width: 70%;
   }
+
   .nav__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(165, 155, 126);
   }
-  .nav__item > h3 {
+
+  .nav__item h3 {
     font-size: 1.4em;
+    color: rgb(165, 155, 126);
   }
 
   /* ::::::MAIN:::::: */
@@ -672,14 +721,17 @@ a {
     margin: 2em;
     padding: 1;
   }
+
   .galeria__img {
     border-radius: 15px;
     border: 0.123em solid rgb(165, 155, 126);
   }
+
   /* ::::::::::::INFORMACION ADICIONAL:::::::::::: */
 
   .informacion__adicional {
-    height: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 
   .info__item {
@@ -687,6 +739,8 @@ a {
     justify-content: center;
     align-items: center;
     color: rgb(165, 155, 126);
+    background-color: rgba(165, 155, 126, 0.1);
+    height: 7em;
   }
 
   .info__item > h3 {
@@ -713,14 +767,17 @@ a {
     display: flex;
     justify-content: flex-end;
   }
+
   .ancho__marca {
     width: 30%;
     height: 9em;
   }
+
   .ancho__filauno {
     width: 35%;
     height: 9em;
   }
+
   .ancho__filados {
     width: 35%;
     height: 9em;
@@ -741,6 +798,7 @@ a {
   .ajuste_4 {
     justify-content: flex-start;
   }
+
   /* ::::::::::::PRODUCTO.HTML:::::::::::: */
 
   .card__imagen {
@@ -755,13 +813,16 @@ a {
   .card-img__ancho {
     width: 40%;
   }
+
   .card-txt__ancho {
     width: 60%;
     justify-content: flex-start !important;
   }
+
   .card__texto {
     width: 30%;
   }
+
   /* ::::::::::::CONTACTO.HTML:::::::::::: */
 
   .row__form-txt {
@@ -773,5 +834,142 @@ a {
     height: 30em;
     display: flex;
     align-items: flex-start;
+  }
+
+  /*_________________________PELICULAS.HTML_________________________________  */
+
+  /* ::::::::::::DISPLAY:::::::::::: */
+
+  .filter__cont__button {
+    display: none;
+  }
+
+  .fila__1y2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fila__3y4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .fila__5y6 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contenedor__flexible__padre {
+    display: flex;
+  }
+
+  .contenedor__flexible__check {
+    margin-top: 1.5em;
+    width: 20%;
+  }
+
+  .contenedor__flexible__cards {
+    margin-top: 1.5em;
+    /* margin-bottom: 2.5em; */
+    width: 60%;
+  }
+
+  /* ::::::::::::SECCION CHECKBOX:::::::::::: */
+
+  #section__peliculas__filtro {
+    height: 85%;
+  }
+
+  .peliculas__check__cont-1,
+  .peliculas__check__cont-2,
+  .peliculas__check__cont-3,
+  .peliculas__check__cont-4 {
+    margin-left: 2em;
+
+    padding-bottom: 1.6em;
+    border-bottom: 1px solid rgb(165, 155, 126);
+  }
+
+  /* .peliculas__check__cont-1,
+  .peliculas__check__cont-2,
+  .peliculas__check__cont-3,
+  .peliculas__check__cont-4  h3 {
+    font-family: "Jost", sans-serif !important;
+    color: white;
+  } */
+
+  .peliculas__check__cont-1 h3 {
+    font-family: "Jost", sans-serif !important;
+    color: rgb(165, 155, 126);
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.3em;
+    margin-top: 1.6em;
+    margin-bottom: 1.3em;
+    border-radius: 10px;
+    /* border: 1px solid rgb(165, 155, 126); */
+    background-color: rgba(165, 155, 126, 0.1);
+    display: flex;
+    justify-content: center;
+  }
+
+  .peliculas__check__cont-2 h3 {
+    font-family: "Jost", sans-serif !important;
+    color: rgb(165, 155, 126);
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.3em;
+    margin-top: 1.6em;
+    margin-bottom: 1.3em;
+    border-radius: 10px;
+    /* border: 1px solid rgb(165, 155, 126); */
+    background-color: rgba(165, 155, 126, 0.1);
+    display: flex;
+    justify-content: center;
+  }
+
+  .peliculas__check__cont-3 h3 {
+    font-family: "Jost", sans-serif !important;
+    color: rgb(165, 155, 126);
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.3em;
+    margin-top: 1.6em;
+    margin-bottom: 1.3em;
+    border-radius: 10px;
+    /* border: 1px solid rgb(165, 155, 126); */
+    background-color: rgba(165, 155, 126, 0.1);
+    display: flex;
+    justify-content: center;
+  }
+
+  .peliculas__check__cont-4 h3 {
+    font-family: "Jost", sans-serif !important;
+    color: rgb(165, 155, 126);
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 0.3em;
+    margin-top: 1.6em;
+    margin-bottom: 1.3em;
+    border-radius: 10px;
+    /* border: 1px solid rgb(165, 155, 126); */
+    background-color: rgba(165, 155, 126, 0.1);
+    display: flex;
+    justify-content: center;
+  }
+
+  .filter__check {
+    font-family: "Jost", sans-serif !important;
+    color: rgb(165, 155, 126);
+    font-size: 1.2em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+
+  /* ::::::::::::BOTONERA FILTRO DESKTOP:::::::::::: */
+
+  .filter__check input:checked {
+    background-color: rgb(165, 155, 126);
+    border-color: rgb(165, 155, 126);
   }
 }

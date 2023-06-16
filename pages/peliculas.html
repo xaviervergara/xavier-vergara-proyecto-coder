@@ -16,11 +16,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <!-- GOOGLE-FONTS -->
+    <!-- GOOGLE-FONTS (PLAY) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Play&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GOOGLE-FONTS (JOST) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap"
       rel="stylesheet"
     />
 
@@ -95,10 +102,22 @@
         </div>
       </div>
     </header>
-    <!-- ::::::::::::MAIN:::::::::::: -->
 
-    <main class="mt-1 container-fluid">
-      <!-- FILA-FILTRO -->
+    <!-- BARRA NAVEGADORA (SOLO EN DESKTOP) -->
+
+    <nav class="container-fluid barra-navegadora">
+      <div class="row nav__row">
+        <div class="col-3 nav__item"><h3>Peliculas</h3></div>
+        <div class="col-3 nav__item"><h3>Fotografía</h3></div>
+        <div class="col-3 nav__item"><h3>Música</h3></div>
+        <div class="col-3 nav__item"><h3>Abstracto</h3></div>
+      </div>
+    </nav>
+
+    <!-- ___________________________::::::::::::MAIN::::::::::::___________________________ -->
+    <main class="mt-1 container-fluid contenedor__flexible__padre">
+      <!-- FILA-FILTRO - (SOLO EN MOBILE )-->
+
       <div class="mt-2 row d-flex justify-content-end">
         <div class="col-3 d-flex justify-content-end filter__cont">
           <div class="dropdown">
@@ -159,217 +178,582 @@
         </div>
       </div>
 
-      <!-- MOVIE PRIMERA FILA ________________ -->
+      <!-- SECCION CHECKBOX (SOLO EN DESKTOP) -->
+      <div class="contenedor__flexible__check">
+        <section
+          id="section__peliculas__filtro"
+          class="container-fluid d-flex flex-column seccion__filtro align-items-start justify-content-around"
+        >
+          <!-- ::::::CAJA__1:::::: -->
+          <div class="peliculas__check__cont-1">
+            <!-- CHECKBOX_1 -->
+            <h3>TAMAÑO:</h3>
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
 
-      <div class="row d-flex justify-content-around align-items-center">
-        <!-- COLUMNA 1 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img src="../media//ataxi-poster.jpg" class="img-fluid" alt="" />
+            <!-- CHECKBOX_2 -->
+
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <!-- CHECKBOX_3 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <!-- CHECKBOX_4 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
           </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Sleep.</p>
+          <!-- ::::::CAJA__2:::::: -->
+
+          <div class="peliculas__check__cont-2">
+            <!-- CHECKBOX_1 -->
+            <h3>TAMAÑO:</h3>
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+
+            <!-- CHECKBOX_2 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <!-- CHECKBOX_3 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <!-- CHECKBOX_4 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
           </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
+          <!-- ::::::CAJA__3:::::: -->
+          <div class="peliculas__check__cont-3">
+            <!-- CHECKBOX_1 -->
+            <h3>TAMAÑO:</h3>
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+
+            <!-- CHECKBOX_2 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <!-- CHECKBOX_3 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <!-- CHECKBOX_4 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
           </div>
-        </div>
-        <!-- COLUMNA 2 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img src="../media/blondi-poster.jpg" class="img-fluid" alt="" />
+          <!-- ::::::CAJA__4:::::: -->
+          <div class="peliculas__check__cont-4">
+            <!-- CHECKBOX_1 -->
+            <h3>TAMAÑO:</h3>
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+
+            <!-- CHECKBOX_2 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <!-- CHECKBOX_3 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
+            <!-- CHECKBOX_4 -->
+            <div class="form-check filter__check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Default checkbox
+              </label>
+            </div>
           </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Blondi.</p>
-          </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
-          </div>
-        </div>
+        </section>
       </div>
-      <!-- MOVIE SEGUNDA FILA ________________-->
 
-      <div class="row d-flex justify-content-around align-items-center">
-        <!-- COLUMNA 1 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img src="../media/hateful-poster.jpg" class="img-fluid" alt="" />
-          </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Sleep.</p>
-          </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
-          </div>
-        </div>
-        <!-- COLUMNA 2 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img src="../media/distaster-poster.jpg" class="img-fluid" alt="" />
-          </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Blondi.</p>
-          </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- MOVIE TERCERA FILA ________________-->
+      <!-- SECCION TARJETAS CONTENEDOR PADRE (DESKTOP) -->
+      <div class="contenedor__flexible__cards">
+        <!-- CONTENEDOR PADRE FILA 1 Y 2 (SOLO EN DESKTOP) -->
+        <div class="fila__1y2">
+          <!-- MOVIE PRIMERA FILA ________________ -->
 
-      <div class="row d-flex justify-content-around align-items-center">
-        <!-- COLUMNA 1 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img src="../media/pearl-poster.jpg" class="img-fluid" alt="" />
+          <div class="row d-flex justify-content-around align-items-center">
+            <!-- COLUMNA 1 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img src="../media/pearl-poster.jpg" class="img-fluid" alt="" />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>Pearl.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href=""
+                  ><button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- COLUMNA 2 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img
+                  src="../media/blondi-poster.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>Blondi.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="./producto.html">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Sleep.</p>
-          </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
-          </div>
-        </div>
-        <!-- COLUMNA 2 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img src="../media/jaws-poster.jpg" class="img-fluid" alt="" />
-          </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Blondi.</p>
-          </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
-          </div>
-        </div>
-      </div>
+          <!-- MOVIE SEGUNDA FILA ________________-->
 
-      <!-- MOVIE CUARTA FILA ________________-->
-
-      <div class="row d-flex justify-content-around align-items-center">
-        <!-- COLUMNA 1 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img src="../media/spirited-poster.jpg" class="img-fluid" alt="" />
-          </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Sleep.</p>
-          </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
-          </div>
-        </div>
-        <!-- COLUMNA 2 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img
-              src="../media/hereditary-poster.jpg"
-              class="img-fluid"
-              alt=""
-            />
-          </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Blondi.</p>
-          </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
-          </div>
-        </div>
-      </div>
-
-      <!-- MOVIE QUINTA FILA ________________-->
-
-      <div class="row d-flex justify-content-around align-items-center">
-        <!-- COLUMNA 1 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img src="../media/car-poster.jpg" class="img-fluid" alt="" />
-          </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Sleep.</p>
-          </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
+          <div class="row d-flex justify-content-around align-items-center">
+            <!-- COLUMNA 1 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img
+                  src="../media/hateful-poster.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>The hateful eight.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- COLUMNA 2 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img
+                  src="../media/spirited-poster.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>Spirited away.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
         </div>
-        <!-- COLUMNA 2 -->
-        <!-- IMG -->
-        <div class="col-6 card__cont">
-          <div class="card__cont__img">
-            <img
-              src="../media/possession-poster.jpg"
-              class="img-fluid"
-              alt=""
-            />
+
+        <!-- CONTENEDOR PADRE FILA 3 Y 4 (SOLO EN DESKTOP) -->
+        <div class="fila__3y4">
+          <!-- MOVIE TERCERA FILA ________________-->
+
+          <div class="row d-flex justify-content-around align-items-center">
+            <!-- COLUMNA 1 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img src="../media/car-poster.jpg" class="img-fluid" alt="" />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>Drive my car.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href=""
+                  ><button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- COLUMNA 2 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img src="../media/jaws-poster.jpg" class="img-fluid" alt="" />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>Jaws.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href=""
+                  ><button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
-          <!-- DESCRIPCION -->
-          <div class="mt-1 d-flex justify-content-center card__cont__txt">
-            <p>Blondi.</p>
+
+          <!-- MOVIE CUARTA FILA ________________-->
+
+          <div class="row d-flex justify-content-around align-items-center">
+            <!-- COLUMNA 1 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img
+                  src="../media/hereditary-poster.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>Hereditary.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- COLUMNA 2 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img
+                  src="../media/distaster-poster.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>The disaster artist.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
-          <!-- BUTTON -->
-          <div class="mt-1 d-flex justify-content-center card__cont__button">
-            <button type="button" class="btn btn-primary btn-sm">
-              <i class="bi bi-bag-heart-fill"></i>
-              <p>Add to bag</p>
-            </button>
+        </div>
+
+        <!-- CONTENEDOR PADRE FILA 5 Y 6 (SOLO EN DESKTOP) -->
+        <div class="fila__5y6">
+          <!-- MOVIE QUINTA FILA ________________-->
+
+          <div class="row d-flex justify-content-around align-items-center">
+            <!-- COLUMNA 1 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img src="../media/ataxi-poster.jpg" class="img-fluid" alt="" />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>A taxi driver.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- COLUMNA 2 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img
+                  src="../media/possession-poster.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>Possession.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- MOVIE SEXTA FILA ________________-->
+
+          <div
+            class="row d-flex justify-content-around align-items-center tarjeta__adicional"
+          >
+            <!-- COLUMNA 1 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img src="../media/ataxi-poster.jpg" class="img-fluid" alt="" />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>A taxi driver.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
+            <!-- COLUMNA 2 -->
+            <!-- IMG -->
+            <div class="col-5 col-xl-4 card__cont">
+              <div class="card__cont__img">
+                <img
+                  src="../media/possession-poster.jpg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <!-- DESCRIPCION -->
+              <div class="mt-1 d-flex justify-content-center card__cont__txt">
+                <p>Possession.</p>
+              </div>
+              <!-- BUTTON -->
+              <div
+                class="mt-1 d-flex justify-content-center card__cont__button"
+              >
+                <a href="">
+                  <button type="button" class="btn btn-primary btn-sm">
+                    <i class="bi bi-bag-heart-fill"></i>
+                    <p>Add to bag</p>
+                  </button></a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- ::::::::::::INFORMACION ADICIONAL:::::::::::: -->
+
+    <section class="container-fluid informacion__adicional">
+      <div class="row">
+        <div class="col-4 info__item">
+          <i class="bi bi-truck"></i>
+          <h3>Envío gratis</h3>
+        </div>
+        <div class="col-4 info__item">
+          <i class="bi bi-credit-card"></i>
+          <h3>Pagá en 3 cuotas sin interés</h3>
+        </div>
+        <div class="col-4 info__item">
+          <i class="bi bi-arrow-repeat"></i>
+          <h3>Cambios y devoluciones</h3>
+        </div>
+      </div>
+    </section>
 
     <!-- ::::::::::::FOOTER:::::::::::: -->
     <footer class="mt-3">
