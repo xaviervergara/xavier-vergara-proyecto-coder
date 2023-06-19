@@ -1,0 +1,44 @@
+footer {
+     font-family: $regular-typography !important;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.linea-divisora { border-top: 1px solid white;
+}
+
+.lista__footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 8.31em;
+  }
+
+  .footer__marca {
+    color: white;
+    font-size: 1.3em;
+    height: 1.5em;
+    font-style: italic;
+    width: 8.31em;
+    font-family: $brand-typography;
+  }
+
+  .footer__ttl {
+    color: $secondary-color;
+    margin: 0;
+    font-size: 1em;
+    margin-bottom: 0.7em;
+    font-weight: 700;
+  }
+
+
+  .link__p {
+    color: rgb(255, 255, 255);
+    font-size: 0.7em;
+  }
+
+  .footer_cuadricula {
+    height: 7em;
+    padding: 0.2em;
+  }
+

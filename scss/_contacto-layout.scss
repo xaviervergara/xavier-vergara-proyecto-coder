@@ -1,0 +1,44 @@
+.row__form-txt {
+    height: 3em;
+
+    div {
+        font-size: 2em;
+        color: $secondary-color;}
+  }
+
+.row__formulario {
+  height: 25em;
+}
+
+// BOTON
+
+.boton__formulario {
+    --bs-btn-color: rgb(5, 5, 0);
+    --bs-btn-bg: rgb(165, 155, 126);
+    --bs-btn-border-color: rgb(165, 155, 126);
+    --bs-btn-hover-color: rgb(165, 155, 126);
+    --bs-btn-hover-bg: rgba(165, 155, 126, 0.2);
+    --bs-btn-hover-border-color: rgb(165, 155, 126);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: rgb(165, 155, 126);
+    --bs-btn-active-bg: rgb(5, 5, 0);
+    --bs-btn-active-border-color: rgb(165, 155, 126);
+  }
+
+/* TITULO-ETIQUETA */
+
+.titulo__etiqueta {
+    color: $secondary-color;
+  }
+  
+
+  /* CHECKBOX */
+.formulario__checkbox {
+    background-color: white;
+    border: 2px solid rgb(63, 63, 63);
+
+    &:checked{
+        background-color: $secondary-color;
+        border-color: $secondary-color;
+            }
+  }

@@ -6,6 +6,7 @@ $secondary-color:rgb(165, 155, 126);
 // TIPOGRAFIAS
 
 $brand-typography:"Play", sans-serif;
+$regular-typography:"Jost", sans-serif;
 
 // RESET
 
@@ -17,3 +18,5 @@ margin: 0;
 padding: 0;}
 
 a{text-decoration: none;}
+
+body {background-color: $primary-color;}

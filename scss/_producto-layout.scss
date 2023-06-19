@@ -1,0 +1,51 @@
+
+.card__cuerpo {
+    background-color: rgb(255, 254, 240);
+  }
+
+  .card__imagen {
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+  }
+
+  .card__texto {
+
+    font-family: 'Jost', sans-serif;
+
+    h5 {  
+        color: $secondary-color;
+        margin-right: 0.5em;
+        font-size: 1.5em;
+        }
+
+    p {
+      
+        color: white;
+        font-size: 1em;
+        }    
+
+  }
+
+  .card__boton {
+    background-color: $primary-color;
+    border: none;
+
+    i { 
+        color: $secondary-color;
+    }
+
+    span {
+      color: $secondary-color;
+        margin-right: 0.5em;
+        font-size: 1.1em;
+    }
+
+    &:hover { background-color: black;
+    }
+
+    &:active{
+        background-color: rgb(12, 12, 5) !important;
+    }
+
+  }

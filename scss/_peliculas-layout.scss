@@ -1,0 +1,109 @@
+/* FILA FILTRO */
+
+.fila__filtro {
+    color: white;
+  }
+
+  /* BOTON FILTRO */
+
+.filter__cont__button {
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-padding-y: 0.1rem;
+    --bs-btn-font-size: 0.8rem;
+    --bs-btn-color: rgb(5, 5, 0);
+    --bs-btn-bg: rgb(165, 155, 126);
+    --bs-btn-border-color: rgb(5, 5, 0);
+    --bs-btn-hover-color: rgb(165, 155, 126);
+    --bs-btn-hover-bg: rgb(5, 5, 0);
+    --bs-btn-hover-border-color: rgb(165, 155, 126);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: rgb(165, 155, 126);
+    --bs-btn-active-bg: rgb(5, 5, 0);
+    --bs-btn-active-border-color: rgb(165, 155, 126);
+  }
+  
+/* DROPDOWN FILTRO____________________________ */
+
+.filter__cont__dropdown {
+  background-color: $primary-color;
+  padding: 0.5em;
+  color: $secondary-color;
+}
+
+.filter__cont__input:checked {
+  background-color: $secondary-color;
+  border-color: $primary-color;
+}
+
+/* CONTENEDOR CARD PADRE___________________________ */
+
+.card__cont {
+    height: 350p;
+    width: 190p;
+    margin: 0.5em;
+    padding: 0.5em;
+    border-radius: 10px;
+    background-color: #0a0a0a;
+  }
+
+  /* CONTENEDOR IMAGEN */
+//   IMAGEN
+
+.card__cont__img {
+    border-radius: 25px;
+    border: 1px solid rgb(165, 155, 126);
+   
+    img {
+        border-radius: 25px;
+        }
+
+  }
+
+  /* DESCRIPCION */
+
+.card__cont__txt {
+
+   p {
+    margin: 0;
+    color: rgb(165, 155, 126);
+    }
+  }
+
+  /* BUTTON */
+
+  .card__cont__button {
+
+    a { 
+        button {  --bs-btn-color: rgb(165, 155, 126);
+            --bs-btn-bg: rgb(5, 5, 0);
+            --bs-btn-border-color: rgb(165, 155, 126);
+            --bs-btn-hover-color: rgb(165, 155, 126);
+            --bs-btn-hover-bg: rgb(5, 5, 0);
+            --bs-btn-hover-border-color: rgb(5, 5, 0);
+            --bs-btn-focus-shadow-rgb: 49, 132, 253;
+            --bs-btn-active-color: rgb(5, 5, 0);
+            --bs-btn-active-bg: rgb(165, 155, 126);
+            --bs-btn-active-border-color: rgb(5, 5, 0);
+            --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+            --bs-btn-disabled-color: #fff;
+            --bs-btn-disabled-bg: rgb(5, 5, 0);
+            --bs-btn-disabled-border-color: rgb(5, 5, 0);
+            display: flex;
+            align-items: center;
+
+
+                i {
+                    font-size: 1em;
+                    margin-right: 0.2em;
+                }
+
+                p {
+                    font-size: 1em;
+                    margin: 0;
+                }
+
+
+            }
+    }
+
+  }

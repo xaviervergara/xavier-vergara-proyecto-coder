@@ -13,4 +13,322 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: rgb(5, 5, 0);
+}
+
+.header__container {
+  background-color: rgb(165, 155, 126);
+  height: 3em;
+}
+
+.boton-personalizado {
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-bg: rgb(5, 5, 0);
+  --bs-btn-active-border-color: transparent;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  border-color: transparent;
+}
+.boton-personalizado i {
+  color: hsl(60, 100%, 1%);
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.boton-personalizado i:active {
+  color: rgb(165, 155, 126);
+}
+
+.offcanvas-header {
+  background-color: rgba(5, 5, 0, 0.9);
+  border-bottom: 2px solid rgba(165, 155, 126, 0.4);
+}
+.offcanvas-header h5 {
+  color: rgb(165, 155, 126);
+}
+
+.btn-close {
+  --bs-btn-close-color: #000;
+  --bs-btn-close-opacity: 1;
+  --bs-btn-close-hover-opacity: 1;
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem transparent;
+  background: rgba(165, 155, 126, 0.4) var(--bs-btn-close-bg) center/1em auto no-repeat;
+}
+
+.offcanvas-body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(5, 5, 0);
+}
+
+.lista__canvas ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.link-canvas {
+  display: flex;
+  width: 17em;
+  text-decoration: none;
+  color: rgb(165, 155, 126);
+  margin: 1em;
+  font-size: 1.1em;
+}
+.link-canvas:active {
+  background-color: rgba(165, 155, 126, 0.02);
+  font-size: 0.97em;
+  border-color: transparent;
+}
+
+/*HEADER-MARCA/SEARCH/SHOP*/
+.header__marca a {
+  font-family: "Play", sans-serif;
+  font-size: 1.2em;
+  color: rgb(5, 5, 0);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.header__search a {
+  font-size: 1.2em;
+  color: rgb(5, 5, 0);
+}
+
+.header__shop a {
+  font-size: 1.2em;
+  color: rgb(5, 5, 0);
+}
+
+footer {
+  font-family: "Jost", sans-serif !important;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.linea-divisora {
+  border-top: 1px solid white;
+}
+
+.lista__footer {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 8.31em;
+}
+
+.footer__marca {
+  color: white;
+  font-size: 1.3em;
+  height: 1.5em;
+  font-style: italic;
+  width: 8.31em;
+  font-family: "Play", sans-serif;
+}
+
+.footer__ttl {
+  color: rgb(165, 155, 126);
+  margin: 0;
+  font-size: 1em;
+  margin-bottom: 0.7em;
+  font-weight: 700;
+}
+
+.link__p {
+  color: rgb(255, 255, 255);
+  font-size: 0.7em;
+}
+
+.footer_cuadricula {
+  height: 7em;
+  padding: 0.2em;
+}
+
+.main__container {
+  position: relative;
+}
+
+.main__title {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
+.main__title h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.row__form-txt {
+  height: 3em;
+}
+.row__form-txt div {
+  font-size: 2em;
+  color: rgb(165, 155, 126);
+}
+
+.row__formulario {
+  height: 25em;
+}
+
+.boton__formulario {
+  --bs-btn-color: rgb(5, 5, 0);
+  --bs-btn-bg: rgb(165, 155, 126);
+  --bs-btn-border-color: rgb(165, 155, 126);
+  --bs-btn-hover-color: rgb(165, 155, 126);
+  --bs-btn-hover-bg: rgba(165, 155, 126, 0.2);
+  --bs-btn-hover-border-color: rgb(165, 155, 126);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: rgb(165, 155, 126);
+  --bs-btn-active-bg: rgb(5, 5, 0);
+  --bs-btn-active-border-color: rgb(165, 155, 126);
+}
+
+/* TITULO-ETIQUETA */
+.titulo__etiqueta {
+  color: rgb(165, 155, 126);
+}
+
+/* CHECKBOX */
+.formulario__checkbox {
+  background-color: white;
+  border: 2px solid rgb(63, 63, 63);
+}
+.formulario__checkbox:checked {
+  background-color: rgb(165, 155, 126);
+  border-color: rgb(165, 155, 126);
+}
+
+/* FILA FILTRO */
+.fila__filtro {
+  color: white;
+}
+
+/* BOTON FILTRO */
+.filter__cont__button {
+  --bs-btn-padding-x: 0.75rem;
+  --bs-btn-padding-y: 0.1rem;
+  --bs-btn-font-size: 0.8rem;
+  --bs-btn-color: rgb(5, 5, 0);
+  --bs-btn-bg: rgb(165, 155, 126);
+  --bs-btn-border-color: rgb(5, 5, 0);
+  --bs-btn-hover-color: rgb(165, 155, 126);
+  --bs-btn-hover-bg: rgb(5, 5, 0);
+  --bs-btn-hover-border-color: rgb(165, 155, 126);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: rgb(165, 155, 126);
+  --bs-btn-active-bg: rgb(5, 5, 0);
+  --bs-btn-active-border-color: rgb(165, 155, 126);
+}
+
+/* DROPDOWN FILTRO____________________________ */
+.filter__cont__dropdown {
+  background-color: rgb(5, 5, 0);
+  padding: 0.5em;
+  color: rgb(165, 155, 126);
+}
+
+.filter__cont__input:checked {
+  background-color: rgb(165, 155, 126);
+  border-color: rgb(5, 5, 0);
+}
+
+/* CONTENEDOR CARD PADRE___________________________ */
+.card__cont {
+  height: 350p;
+  width: 190p;
+  margin: 0.5em;
+  padding: 0.5em;
+  border-radius: 10px;
+  background-color: #0a0a0a;
+}
+
+/* CONTENEDOR IMAGEN */
+.card__cont__img {
+  border-radius: 25px;
+  border: 1px solid rgb(165, 155, 126);
+}
+.card__cont__img img {
+  border-radius: 25px;
+}
+
+/* DESCRIPCION */
+.card__cont__txt p {
+  margin: 0;
+  color: rgb(165, 155, 126);
+}
+
+/* BUTTON */
+.card__cont__button a button {
+  --bs-btn-color: rgb(165, 155, 126);
+  --bs-btn-bg: rgb(5, 5, 0);
+  --bs-btn-border-color: rgb(165, 155, 126);
+  --bs-btn-hover-color: rgb(165, 155, 126);
+  --bs-btn-hover-bg: rgb(5, 5, 0);
+  --bs-btn-hover-border-color: rgb(5, 5, 0);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: rgb(5, 5, 0);
+  --bs-btn-active-bg: rgb(165, 155, 126);
+  --bs-btn-active-border-color: rgb(5, 5, 0);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: rgb(5, 5, 0);
+  --bs-btn-disabled-border-color: rgb(5, 5, 0);
+  display: flex;
+  align-items: center;
+}
+.card__cont__button a button i {
+  font-size: 1em;
+  margin-right: 0.2em;
+}
+.card__cont__button a button p {
+  font-size: 1em;
+  margin: 0;
+}
+
+.card__cuerpo {
+  background-color: rgb(255, 254, 240);
+}
+
+.card__imagen {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.card__texto {
+  font-family: "Jost", sans-serif;
+}
+.card__texto h5 {
+  color: rgb(165, 155, 126);
+  margin-right: 0.5em;
+  font-size: 1.5em;
+}
+.card__texto p {
+  color: white;
+  font-size: 1em;
+}
+
+.card__boton {
+  background-color: rgb(5, 5, 0);
+  border: none;
+}
+.card__boton i {
+  color: rgb(165, 155, 126);
+}
+.card__boton span {
+  color: rgb(165, 155, 126);
+  margin-right: 0.5em;
+  font-size: 1.1em;
+}
+.card__boton:hover {
+  background-color: black;
+}
+.card__boton:active {
+  background-color: rgb(12, 12, 5) !important;
+}
+
 /*# sourceMappingURL=main.css.map */

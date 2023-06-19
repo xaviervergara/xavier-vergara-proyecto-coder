@@ -1,0 +1,103 @@
+
+
+.header__container {background-color: $secondary-color;
+height: 3em;}
+
+// OFF CANVAS
+
+// BUTTON
+
+.boton-personalizado {
+    --bs-btn-hover-bg: transparent;
+    --bs-btn-hover-border-color: transparent;
+    --bs-btn-active-bg: rgb(5, 5, 0);
+    --bs-btn-active-border-color: transparent;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border-color: transparent;
+
+i {color: hsl(60, 100%, 1%);
+    font-size: 1.5em;
+    font-weight: bold;
+    &:active{
+    color: $secondary-color;
+  }
+}
+}
+
+// OFF CANVAS BODY
+
+.offcanvas-header {  
+    background-color: rgba(5, 5, 0, 0.9);
+    border-bottom: 2px solid rgba(165, 155, 126, 0.4);
+
+    h5 {
+    color: $secondary-color;
+    }
+
+}
+
+.btn-close {
+    --bs-btn-close-color: #000;
+    --bs-btn-close-opacity: 1;
+    --bs-btn-close-hover-opacity: 1;
+    --bs-btn-close-focus-shadow: 0 0 0 0.25rem transparent;
+    background: rgba(165, 155, 126, 0.4) var(--bs-btn-close-bg) center/1em auto
+      no-repeat;
+  }
+
+  .offcanvas-body {
+    padding: 0;
+    margin: 0;
+    background-color: $primary-color;
+  }
+
+  .lista__canvas {
+    ul {list-style-type: none;
+    margin: 0;
+    padding: 0;
+    }
+
+}
+
+.link-canvas {  
+    display: flex;
+    width: 17em;
+    text-decoration: none;
+    color: rgb(165, 155, 126);
+    margin: 1em;
+    font-size: 1.1em;
+
+    &:active { 
+        background-color: rgba(165, 155, 126, 0.02);
+        font-size: 0.97em;
+        border-color: transparent;
+    }
+
+}
+
+/*HEADER-MARCA/SEARCH/SHOP*/
+
+
+.header__marca {
+    a {
+         font-family: $brand-typography;
+        font-size: 1.2em;
+        color: rgb(5, 5, 0);
+        font-weight: bold;
+        font-style: italic;}
+}
+
+.header__search {
+    a {
+        font-size: 1.2em;
+        color: $primary-color;
+    }
+}
+
+.header__shop { 
+    a {font-size: 1.2em;
+        color: $primary-color;
+    }
+    }

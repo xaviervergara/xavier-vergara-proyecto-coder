@@ -1,0 +1,26 @@
+
+// MAIN
+
+// IMAGEN PRINCIPAL
+
+.main__container {
+    position: relative;
+  }
+
+
+  .main__title {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.9),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0)
+    );
+
+    h1 { color: white;
+        font-weight: bold;
+        font-size: 2em;}
+  }
