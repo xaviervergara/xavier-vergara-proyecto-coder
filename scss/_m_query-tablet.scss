@@ -1,0 +1,102 @@
+
+/* POR DEBAJO DE 768px: subtitulo de carousel h5 mide 1.2em el p del carousel mide 1 em, 
+los indicadores de posicion no se muestran y los caption en general se posicionan mas abajo */
+
+// INDEX.HTML
+
+@media screen and (max-width: 767px) {
+    
+    .carousel-caption {
+      bottom: -1.7rem;
+
+      h5 {
+        font-size: 1.2em;
+      }
+
+      P {
+        font-size: 1em;
+      }
+
+    }
+
+    .carousel-indicators {
+        display: none;
+      }
+    
+  }
+
+/* POR ENCIMA DE 767px (EN VISTA TABLET) EL FOOTER CAMBIA EL 
+DISEÑO PARA ESTAR TODO SOBRE UNA SOLA LINEA  */
+
+
+@media screen and (min-width: 767px) {
+
+    .linea-divisora {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      height: 10em;
+    }
+  
+    .footer_cuadricula  {
+     
+      ul {margin: 1em;
+        width: 7em;
+        }
+    }
+  
+    .contenedor__marca, .footer__marca {
+      display: flex;
+      justify-content: center;
+    }
+  
+
+  
+    /* ::::::::::::PRODUCTO.HTML:::::::::::: */
+    .main__card {
+      display: flex;
+    }
+  
+    .card-img__ancho,
+    .card-txt__ancho {
+      width: 100%;
+    }
+  
+    .card__cuerpo {
+      width: 90%;
+    }
+  
+    .card__texto {
+      width: 90%;
+    }
+  
+    .card__texto {
+
+        h5 {
+            font-size: 1.6em;
+        }
+
+        p {
+            font-size: 1.4em;
+          }
+    }
+  
+  }
+  
+
+  /* A PARTIR DE 890px SE RE-DIMENSIONA EL FOOTER PARA QUE NO SE SEPAREN LAS ROWS */
+
+@media screen and (min-width: 890px) {
+
+    .footer_cuadricula {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      height: 10em;
+    }
+  
+    .ancho__marca, .ancho__filauno, .ancho__filados {
+      width: 100%;
+      height: 12em;
+    }     
+  }

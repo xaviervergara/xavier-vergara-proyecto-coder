@@ -1,0 +1,387 @@
+
+/*HASTA QUE LA PANTALLA NO MIDA 1200PX NO SE MUESTRA LA GALERIA DE POSTERS RECTANGULARES 
+  NI LA BARRA NAVEGADORA NI LA FILA DE INFO ADICIONAL NI MENU DESPLEGABLE ni el filtro izquierdo 
+  y la fila adicional en peliculas.html */
+
+
+@media screen and (max-width: 1199px) {
+    .main__galeria {
+      display: none;
+    }
+  
+    .barra-navegadora {
+      display: none;
+    }
+  
+    .informacion__adicional {
+      display: none;
+    }
+  
+    .seccion__filtro {
+      display: none !important;
+    }
+  
+    .tarjeta__adicional {
+      display: none !important;
+    }
+  }
+
+// A PARTIR DE 1200
+
+@media screen and (min-width: 1200px) {
+
+    //  MAIN IMAGE EFECTO GRADIENTE
+  
+    .main__container {
+      display: flex;
+      justify-content: center;
+    }
+  
+    // LA DIMENSION ORIGINAL DE LOS 3 ITEMS DE ABAJO ES:675 X 1200 
+
+    .main__img {
+      height: 600px;
+      width: 1200px;
+      position: relative;
+    
+      &::before {position: absolute;
+        content: "";
+        height: 600px;
+        width: 1200px;
+        background-image: linear-gradient(
+            to right,
+            rgba(5, 5, 0, 1),
+            rgba(5, 5, 0, 0.4),
+            rgba(5, 5, 0, 0.3),
+            rgba(5, 5, 0, 0.2),
+            rgba(5, 5, 0, 0)
+          ),
+          linear-gradient(
+            to left,
+            rgba(5, 5, 0, 1),
+            rgba(5, 5, 0, 0.4),
+            rgba(5, 5, 0, 0.3),
+            rgba(5, 5, 0, 0.2),
+            rgba(5, 5, 0, 0)
+          ),
+          linear-gradient(
+            to top,
+            rgba(5, 5, 0, 1),
+            rgba(5, 5, 0, 0.4),
+            rgba(5, 5, 0, 0.3),
+            rgba(5, 5, 0, 0.2),
+            rgba(5, 5, 0, 0)
+          );
+        }
+    }
+  
+    .imagen__principal {
+        height: 600px;
+        width: 1200px;
+      }
+    
+    .main__title {
+      z-index: 1;
+      background-image: none;
+      width: 25%;
+      position: absolute;
+      left: 25%;
+
+        h1 {
+            font-size: 3em;
+            width: 50%;
+        }
+    }
+
+
+/*HEADER + REDIMENSION FOOTER// A PARTIR DE WIDTH=1200px 
+SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
+
+/* ::::::HEADER:::::: */
+
+.boton-personalizado {
+    display: none;
+  }
+
+  .header__container {
+    height: 4em;
+  }
+
+
+
+  .header__marca {
+
+    a {
+        font-size: 1.8em;
+    }
+
+    .btn {
+        i {
+            font-size: 1.8em;
+        }
+    }
+  }
+
+
+  .header__row {
+    display: flex;
+    align-items: center;
+  }
+
+  .header__desktop {
+    justify-content: flex-end !important;
+    width: 53%;
+  }
+
+  .header__desktop-b {
+    width: 47%;
+  }
+
+    /* ::::::NAV-BAR:::::: */
+
+    .barra-navegadora {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 4em;
+        background-image: linear-gradient(
+          to bottom,
+          rgba(165, 155, 126, 0.2),
+          rgba(165, 155, 126, 0)
+        );
+      }
+    
+      .nav__row {
+        width: 70%;
+      }
+    
+      .nav__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 1.4em;
+            color: $secondary-color
+        }
+      }
+    
+      
+/* ::::::MAIN:::::: */
+
+  /* ENTRA GALERIA, SALE CAROUSEL */
+
+  .seccion__carousel {
+    display: none;
+  }
+
+  /* CONTENEDOR DE IMAGENES */
+
+  .galeria__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    width: 250px;
+    margin: 2em;
+    padding: 1em;
+  }
+
+  .galeria__img {
+    border-radius: 15px;
+    border: 0.123em solid $secondary-color
+  }
+
+/* ::::::::::::INFORMACION ADICIONAL:::::::::::: */
+
+.informacion__adicional {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  .info__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $secondary-color;
+    background-color: rgba(165, 155, 126, 0.1);
+    height: 7em;
+
+
+    h3 {
+        font-size: 1.08em;
+        margin-left: 1em;
+        margin-bottom: 0;
+    }
+
+
+    i {
+        font-size: 1.9em;   
+    }
+  }
+
+    /* ::::::FOOTER:::::: */
+
+
+    footer {
+        font-size: 1.2em;
+      }
+
+    .linea-divisora {
+        background-color: rgba(165, 155, 126, 0.1);
+      }
+    
+    
+      .contenedor__marca {
+        display: flex;
+        justify-content: flex-end;
+      }
+    
+      .ancho__marca {
+        width: 30%;
+        height: 9em;
+      }
+    
+      .ancho__filauno, .ancho__filados {
+        width: 35%;
+        height: 9em;
+      }
+    
+     
+    
+      .ajuste_1 {
+        justify-content: flex-end !important;
+      }
+    
+      .ajuste_2 {
+        justify-content: center;
+      }
+    
+      .ajuste_3, .ajuste_4 {
+        justify-content: flex-start !important;
+      }
+    
+     
+  /* ::::::::::::PRODUCTO.HTML:::::::::::: */
+
+  .card__imagen {
+    height: 500px;
+    width: 100%;
+  }
+
+  .card__cuerpo {
+    width: 50%;
+  }
+
+  .card-img__ancho {
+    width: 40%;
+  }
+
+  .card-txt__ancho {
+    width: 60%;
+    justify-content: flex-start !important;
+  }
+
+  .card__texto {
+    width: 30%;
+  }
+
+ /* ::::::::::::CONTACTO.HTML:::::::::::: */
+
+ .row__form-txt {
+    align-items: flex-end;
+    height: 10em;
+  }
+
+  .row__formulario {
+    height: 30em;
+    display: flex;
+    align-items: flex-start;
+  }
+
+/*_________________________PELICULAS.HTML_________________________________  */
+
+  /* ::::::::::::DISPLAY:::::::::::: */
+
+  .filter__cont__button {
+    display: none;
+  }
+
+  .fila__1y2, .fila__3y4, .fila__5y6 {
+    display: flex;
+    justify-content: center;
+  }
+
+ 
+  .contenedor__flexible__padre {
+    display: flex;
+  }
+
+  .contenedor__flexible__check {
+    margin-top: 1.5em;
+    width: 20%;
+  }
+
+  .contenedor__flexible__cards {
+    margin-top: 1.5em;
+    width: 60%;
+  }
+
+
+ /* ::::::::::::SECCION CHECKBOX:::::::::::: */
+
+ #section__peliculas__filtro {
+    height: 85%;
+  }
+
+  .peliculas__check__cont-1,
+  .peliculas__check__cont-2,
+  .peliculas__check__cont-3,
+  .peliculas__check__cont-4 {
+    margin-left: 2em;
+    padding-bottom: 1.6em;
+    border-bottom: 1px solid rgb(165, 155, 126);
+  }
+
+
+  .peliculas__check__cont {
+
+    h3 { 
+        font-family: "Jost", sans-serif !important;
+        color: $secondary-color;
+        font-size: 1.1em;
+        font-weight: bold;
+        padding: 0.3em;
+        margin-top: 1.6em;
+        margin-bottom: 1.3em;
+        border-radius: 10px;
+        /* border: 1px solid rgb(165, 155, 126); */
+        background-color: rgba(165, 155, 126, 0.1);
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+ 
+  .filter__check {
+    font-family: "Jost", sans-serif !important;
+    color: $secondary-color;
+    font-size: 1.2em;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+  }
+
+
+ /* ::::::::::::BOTONERA FILTRO DESKTOP:::::::::::: */
+
+ .filter__check input:checked {
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+  }
+
+
+
+
+
+
+  }
