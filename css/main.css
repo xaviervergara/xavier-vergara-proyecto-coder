@@ -493,8 +493,10 @@ DISEÑO PARA ESTAR TODO SOBRE UNA SOLA LINEA  */
     justify-content: center;
     align-items: center;
   }
-  .nav__item h3 {
-    font-size: 1.4em;
+  .nav__item a h3 {
+    font-family: "Jost", sans-serif;
+    font-weight: bold;
+    font-size: 1.6em;
     color: rgb(165, 155, 126);
   }
   /* ::::::MAIN:::::: */

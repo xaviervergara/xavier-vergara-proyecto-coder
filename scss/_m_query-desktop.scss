@@ -160,11 +160,15 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
         justify-content: center;
         align-items: center;
 
+      a { 
         h3 {
-            font-size: 1.4em;
-            color: $secondary-color
-        }
-      }
+           font-family:'Jost', sans-serif;
+           font-weight: bold;
+           font-size: 1.6em;
+           color: $secondary-color;
+    }    
+      }   
+   }
     
       
 /* ::::::MAIN:::::: */
@@ -378,10 +382,5 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
     background-color: $secondary-color;
     border-color: $secondary-color;
   }
-
-
-
-
-
 
   }
