@@ -259,20 +259,23 @@ footer {
 }
 .card__cont__img img {
   border-radius: 25px;
+  touch-action: none;
 }
 
 .card__cont__animation-l {
-  transition: transform 1.5s;
+  transition: transform 500ms;
 }
 .card__cont__animation-l:active {
   transform: scale(2, 2) translate(50px, 50px);
+  touch-action: none;
 }
 
 .card__cont__animation-r {
-  transition: transform 1.5s;
+  transition: transform 500ms;
 }
 .card__cont__animation-r:active {
   transform: scale(2, 2) translate(-50px, 50px);
+  touch-action: none;
 }
 
 /* DESCRIPCION */
