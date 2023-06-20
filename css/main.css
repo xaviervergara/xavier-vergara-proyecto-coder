@@ -255,6 +255,7 @@ footer {
 .card__cont__img {
   border-radius: 25px;
   border: 1px solid rgb(165, 155, 126);
+  touch-action: none;
 }
 .card__cont__img img {
   border-radius: 25px;
