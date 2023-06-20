@@ -8,14 +8,26 @@ $secondary-color:rgb(165, 155, 126);
 $brand-typography:"Play", sans-serif;
 $regular-typography:"Jost", sans-serif;
 
+//MIXINS
+
+@mixin center_all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 // RESET
 
 *{margin: 0;
-padding: 0;}
+padding: 0;
+}
 
-ul{list-style-type: none;
-margin: 0;
-padding: 0;}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 a{text-decoration: none;}
 

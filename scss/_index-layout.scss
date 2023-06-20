@@ -20,7 +20,9 @@
       rgba(0, 0, 0, 0)
     );
 
-    h1 { color: white;
-        font-weight: bold;
+    h1 { 
+        font-family: $regular-typography;
+        color: white;
+        font-weight:bold;
         font-size: 2em;}
   }

@@ -34,6 +34,9 @@ i {color: hsl(60, 100%, 1%);
 
     h5 {
     color: $secondary-color;
+    font-family: $regular-typography;
+    font-weight: bold;
+    font-size: 1.5em;
     }
 
 }
@@ -48,6 +51,7 @@ i {color: hsl(60, 100%, 1%);
   }
 
   .offcanvas-body {
+  
     padding: 0;
     margin: 0;
     background-color: $primary-color;
@@ -67,11 +71,13 @@ i {color: hsl(60, 100%, 1%);
     text-decoration: none;
     color: rgb(165, 155, 126);
     margin: 1em;
-    font-size: 1.1em;
+    font-family: $regular-typography;
+    font-size: 1.4em;
+    font-weight:600;
 
     &:active { 
         background-color: rgba(165, 155, 126, 0.02);
-        font-size: 0.97em;
+        font-size: 1.3em;
         border-color: transparent;
     }
 
@@ -81,12 +87,16 @@ i {color: hsl(60, 100%, 1%);
 
 
 .header__marca {
+
     a {
          font-family: $brand-typography;
         font-size: 1.2em;
         color: rgb(5, 5, 0);
         font-weight: bold;
-        font-style: italic;}
+        font-style: italic;
+    }
+
+        
 }
 
 .header__search {

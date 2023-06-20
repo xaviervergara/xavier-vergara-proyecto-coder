@@ -140,9 +140,7 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
     /* ::::::NAV-BAR:::::: */
 
     .barra-navegadora {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+       @include center_all;
         height: 4em;
         background-image: linear-gradient(
           to bottom,
@@ -156,13 +154,11 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
       }
     
       .nav__item {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       @include center_all;
 
       a { 
         h3 {
-           font-family:'Jost', sans-serif;
+           font-family: $regular-typography;
            font-weight: bold;
            font-size: 1.6em;
            color: $secondary-color;
@@ -182,9 +178,7 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
   /* CONTENEDOR DE IMAGENES */
 
   .galeria__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center_all;
     height: 350px;
     width: 250px;
     margin: 2em;
@@ -204,9 +198,7 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
   }
 
   .info__item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   @include center_all;
     color: $secondary-color;
     background-color: rgba(165, 155, 126, 0.1);
     height: 7em;
@@ -351,7 +343,7 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
   .peliculas__check__cont {
 
     h3 { 
-        font-family: "Jost", sans-serif !important;
+        font-family: $regular-typography !important;
         color: $secondary-color;
         font-size: 1.1em;
         font-weight: bold;
@@ -368,7 +360,7 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
 
  
   .filter__check {
-    font-family: "Jost", sans-serif !important;
+    font-family: $regular-typography!important;
     color: $secondary-color;
     font-size: 1.2em;
     margin-top: 0.3em;
@@ -383,4 +375,16 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
     border-color: $secondary-color;
   }
 
-  }
+  
+// ANIMACIONES
+
+.card__cont__animation-r, .card__cont__animation-l {
+
+&:active {transform:none;
+  translate: none;
+}
+
+}
+
+
+}
