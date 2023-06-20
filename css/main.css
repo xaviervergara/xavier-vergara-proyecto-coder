@@ -255,27 +255,23 @@ footer {
 .card__cont__img {
   border-radius: 25px;
   border: 1px solid rgb(165, 155, 126);
-  touch-action: none;
 }
 .card__cont__img img {
   border-radius: 25px;
-  touch-action: none;
 }
 
 .card__cont__animation-l {
-  transition: transform 500ms;
+  transition: transform 300ms;
 }
 .card__cont__animation-l:active {
   transform: scale(2, 2) translate(50px, 50px);
-  touch-action: none;
 }
 
 .card__cont__animation-r {
-  transition: transform 500ms;
+  transition: transform 300ms;
 }
 .card__cont__animation-r:active {
   transform: scale(2, 2) translate(-50px, 50px);
-  touch-action: none;
 }
 
 /* DESCRIPCION */
@@ -678,6 +674,12 @@ DISEÑO PARA ESTAR TODO SOBRE UNA SOLA LINEA  */
   .card__cont__animation-r:active, .card__cont__animation-l:active {
     transform: none;
     translate: none;
+  }
+  .card__cont__img {
+    transition: transform 1.3s;
+  }
+  .card__cont__img:hover {
+    transform: scale(1.5, 1.5);
   }
 }
 

@@ -375,7 +375,7 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
     border-color: $secondary-color;
   }
 
-  
+
 // ANIMACIONES
 
 .card__cont__animation-r, .card__cont__animation-l {
@@ -386,5 +386,10 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
 
 }
 
+
+.card__cont__img {
+transition: transform 1.3s;
+  &:hover{transform:scale(1.5,1.5) }
+}
 
 }
