@@ -50,6 +50,33 @@ DISEÑO PARA ESTAR TODO SOBRE UNA SOLA LINEA  */
       justify-content: center;
     }
   
+/* ::::::::::::PELICULAS.HTML:::::::::::: */
+  // ANIMACIONES CARD CONT
+
+  .card__cont__animation-l { transition: transform 300ms;
+    
+    &:active {transform: scale(1.5,1.5)
+      translate(42%, 50px);
+      
+              }
+              
+            
+            }
+
+
+
+.card__cont__animation-r {
+   transition: transform 300ms;
+    
+  &:active {transform: scale(1.5, 1.5)
+    translate(-42%, 50px);
+  
+
+            }
+          
+          }
+
+
 
   
     /* ::::::::::::PRODUCTO.HTML:::::::::::: */
@@ -66,11 +93,11 @@ DISEÑO PARA ESTAR TODO SOBRE UNA SOLA LINEA  */
       width: 90%;
     }
   
-    .card__texto {
-      width: 90%;
-    }
+    
   
     .card__texto {
+
+      width: 80%;
 
         h5 {
             font-size: 1.6em;
