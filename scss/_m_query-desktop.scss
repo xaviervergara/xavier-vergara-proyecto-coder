@@ -389,9 +389,28 @@ SE MUESTRA GALERIA DE POSTERS RECTANGULAR Y DESAPARECE EL CAROUSEL*/
 // (NO SE USA L O R YA QUE EN VISTA DESKTOP EL DISPLAY DE LOS POSTERS NO ESTA DIVIDIDO EN DOS COLUMNAS,
 // POR ENDE SOLO SE USA TRANSFORM SCALE PARA AGRANDAR PERO NO SE LLEVA NADA AL CENTRO CON EL TRANSLATE)
 
-.card__cont__img {
-transition: transform 1.3s;
-  &:hover{transform:scale(1.5,1.5) }
+.card__cont__img >img {
+transition: transform 1.3s, border-radius 1.3s ;
+
+
+&:hover{transform:scale(1.5, 1.5);
+  
 }
+}
+
+//  404error.html
+
+#error-body {background-image: url('../media/404-falls.png');}
+
+.not-found-h1{
+  font-size: 7em;
+  color: white;
+  font-family: $regular-typography;
+  font-weight: bold;
+  width:6em;
+  margin: .5em;
+  position: absolute;
+  left: 5%;
+  }
 
 }

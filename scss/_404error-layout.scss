@@ -1,0 +1,28 @@
+
+#error-body {background-image: url('../media/404-falls-90.png');
+
+
+}
+
+.error-img{
+    padding: 0;
+    margin: 0;
+position: relative;}
+
+.not-found-h1{
+    font-size: 5em;
+    color: white;
+    font-family: $regular-typography;
+    font-weight: bold;
+    width:6em;
+    margin: .5em;
+    }
+
+.error-link{  font-size: 2.3em;
+    color: white;
+    font-family: $regular-typography;
+    font-weight: bold;
+    margin: .9em;
+    position: absolute;
+    bottom: 1.4em;
+   }
